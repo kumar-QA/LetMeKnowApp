@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite parallel="tests" name="Suite">
+	<groups>
+		<run>
+		<include name="ErrorHandling"/>
+		</run>
+	</groups>
+	
+	<test thread-count="5" name="SubmitOrderTest">
+		<classes>
+			<class name="com.Ecommerce.Test.SubmitOrderTest" />
+		</classes>
+	</test> <!-- Test -->
+	<test thread-count="5" name="Error Validation Test">
+		<classes>
+			<class name="com.Ecommerce.Test.ErrorValidation" />
+		</classes>
+	</test> <!-- Test -->
+</suite> <!-- Suite -->
+
+
+<!-- 
+<suite parallel="methods" name="Suite">
+
+parallel =methods giving username with double time eneter of username data 
+Example 
+
+mprasannakumar124@gmail.com mprasannakumar124@gmail.com
+</suite>
+ -->
+
